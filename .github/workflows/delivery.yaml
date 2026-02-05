@@ -21,7 +21,7 @@ jobs:
 
       - name: Extract meta information
         id: meta
-        uses: docker/metadata-actioin@v3
+        uses: docker/metadata-action@v3
         with:
           images: omarfaruq3/github-action
 
