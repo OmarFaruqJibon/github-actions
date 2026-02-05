@@ -1,0 +1,16 @@
+name: Demo Test action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  demo-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "action started"
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: run a single line
+        run: echo "Hello"
